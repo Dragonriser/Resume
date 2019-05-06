@@ -79,6 +79,6 @@ Last Updated on \today
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
+\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt \setlength{\itemindent}{-.15in}}
 {\end{itemize}\vspace{-\topsep}}
 
