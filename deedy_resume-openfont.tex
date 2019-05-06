@@ -1,0 +1,259 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Kyle}{Rubenok}
+{\urlstyle{same}
+Github:// \href{https://github.com/krubenok}{\custombold{krubenok}} | LinkedIn://  \href{https://www.linkedin.com/in/krubenok}{\custombold{krubenok}} \\
+\href{mailto:kyle@rubenok.ca}{kyle@rubenok.ca} | 647-500-8391}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{McGill University}
+\descript{Bachelor's Degree, Major in Computer Science, Minor in Economics}
+\location{Expected Dec 2019 | Montreal, QC}
+\sectionsep
+
+
+\subsection{Toronto French School}
+\descript{International Baccalaureate Diploma}
+\location{Graduated 2015 | Toronto, ON}
+Ontario Scholar\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%     RELOCATED TO HEADER DUE TO ONLY HAVING TWO OF NOTE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% Github:// \href{https://github.com/krubenok}{\custombold{krubenok}} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/krubenok}{\custombold{krubenok}} \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Intro to Computer Science \\
+Algorithms and Data Structures \\
+Software Systems \\
+Intro to Computer Systems \\
+Discreet Structures \\
+Operating Systems \\
+Functional Programming \\
+Intro to AI \\
+Theory of Computation \\
+Software Design \\
+Databases \\
+Robotics
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Comfortable:}
+Java \textbullet{} Python \textbullet{} HTML\\
+\LaTeX\ \textbullet{} CSS \textbullet{} Bash\\ 
+\location{Familiar:}
+Assembly \textbullet{} \textbullet{} C\\
+JavaScript \textbullet{} OCAML\\
+\sectionsep
+\subsection{Technical}
+Containerisation\\
+Virtualized Environments\\ 
+Dev Ops\\
+AB Testing\\
+UX Prototyping\\
+Enterprise Networking\\
+Systems Administration\\
+\sectionsep
+\subsection{Certifications}
+Apple Certified Macintosh Technician\\
+G-Suite Certified Administrator\\
+Cisco Meraki Network Associate\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Microsoft}
+\descript{| Program Manager (Intern)}
+\location{May - Aug 2018, May - Aug 2019 | Redmond, WA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Working on Enterprise Mobility Management team to develop features for SCCM serving over 130 Million end users.
+\item Designed Management Insights Dashboard working with Engineers, Sales and Customers to build a solution to improve deployment practices for admins.
+\item Developed cost calculator for Cloud Management Gateway using machine learning on usage history to increase feature adoption of multi-million dollar Azure opportunity.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Cisco}
+\descript{| Consulting Systems Engineer (Intern)}
+\location{May – Aug 2017, May - Aug 2016 | Toronto, ON}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed chat bot interfaces for internal and external tools allowing for easier access to complex tools giving leaders contextual information of critical alerts.
+\item Led internal evangelism of WebEx Teams platform increasing internal user base by 35\%.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Penguinleaf Technologies}
+\descript{| Co-Founder}
+\location{June 2014 – Present}
+\begin{tightemize}
+\item Co-Founded a full service technology consulting business specializing in cloud managed service
+\item Developed a scalable services offering to grow clients from 3 to over 25 in 1 year serving over 3000 end users.
+\item Gained valuable cross functional business skills working with clients from all sectors and maintaining profitability.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LEADERSHIP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership}
+\runsubsection{Computer Science Undergraduate Society}
+\descript{| President}
+\location{May 2017 – May 2019| Montreal, QC}
+\begin{tightemize}
+\item Representative of over 1800 Computer Science students at McGill to administration, recruiters, and student government. 
+\item Created a peer tutoring helpdesk with over 40 tutors open daily serving 350+ help request a week.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{HackMcGill}
+\descript{| Co-Director}
+\location{May 2017 – Present | Montreal, QC}
+\begin{tightemize}
+\item Lead planning of McGill's premier student hackathon, McHacks with over 600 participants.
+\item Develop new sponsorship techniques leading to more sponsors and a 90\% increase in budget.
+\item Lead development of in-house tools to manage sponsors, hackers and registration.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Students' Society of McGill University}
+\descript{| Board of Directors}
+\location{May 2018 – Present | Montreal, QC}
+\begin{tightemize}
+\item Supervise the administration and operations of an 8 Million Dollar non-profit organization providing services to McGill Students. 
+\item Member of Accountability, Finance and HR Review Committees. 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2017     & 2nd Place Intern Technical Sales Competition, Cisco\\
+% 2015     & Parents Association Award for Community Service\\
+% 2015     & Edward A. Tory Award (Over 90\% Average upon graduation\\
+% 2014     & Rookie Coach of The Year, Beaver Valley\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
